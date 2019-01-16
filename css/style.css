@@ -16,7 +16,7 @@ body
 {
     width: 100%;
     background-image: url('https://i.imgur.com/l0MuZsO.jpg');
-    height: 620px;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: 100% 580px;
 }
@@ -109,8 +109,8 @@ body
     font-weight: normal;
 }
 .left-side-bar{
-    position:absolute;
-    height:88vh;
+    position: fixed;
+    height:100vh;
     background:rgba(245, 245, 245,0.7);
     top:0px;
     left:0;
@@ -129,8 +129,8 @@ body
 }
 .right-side-bar
 {
-    position:absolute;
-    height:88vh;
+    height:100vh;
+    position:fixed;
     background:rgba(245, 245, 245,0.7);
     top:0px;
     right:0;
@@ -170,7 +170,7 @@ body
 }
 .header-description-title
 {
-    font-size: 300%;
+    font-size: 350%;
     margin: 70px 0px -10px 0px;
     font-family: FontAwesome, sans-serif;
 } 

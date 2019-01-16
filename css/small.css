@@ -22,10 +22,6 @@
     color:rgb(76, 88, 95);
     margin-left: -120px;
 }
-.nav-bar
-{
-   position: relative;
-}
 .nav-check
 {
     display: initial;  
@@ -33,6 +29,14 @@
 #check:checked ~ .nav-menu 
 {
     height: 200px;
+}
+#open-left:checked ~ .left-side-bar
+{
+    width:100px;
+}
+#open-right:checked ~ .right-side-bar
+{
+    width:100px;
 }
 .header-brand
 {

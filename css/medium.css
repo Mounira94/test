@@ -1,4 +1,4 @@
-/* Meduim device style */
+/* Small device style */
 .nav-menu
 {
    height:0;
@@ -24,10 +24,6 @@
     color:rgb(76, 88, 95);
     margin-left: -120px;
 }
-.nav-bar
-{
-    position: relative;
-}
 .nav-check{
     display: initial; 
 }
@@ -40,6 +36,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+#open-left:checked ~ .left-side-bar
+{
+    width:100px;
+}
+#open-right:checked ~ .right-side-bar
+{
+    width:100px;
+}
+.side-bar-link
+{
+    font-size: 120%;
 }
 .header-description-text
 {
