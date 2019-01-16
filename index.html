@@ -23,7 +23,7 @@
                     <h1 class="logo">LOGO </h1>
                 </div>
                 <nav class="nav-bar">
-                    <label for="check"><i class="fas fa-th"></i> </label>
+                    <label class="nav-check" for="check"><i class="fas fa-th"></i> </label>
                     <input type="checkbox" id="check" />
                     <ul class="nav-menu">
                         <li class="nav-items ">
@@ -47,24 +47,24 @@
                             </ul>
                         </li>
                         <li class="nav-items">
-                            <a class="nav-link" href="#">Left Sidebar</a>
-                            <!-- <ul class="leftsidebar-items">
-                                <li class="leftsidebar-item">
-                                    <a class="leftsidebar-item-link" href="#">Item1</a>
-                                </li>
-                                <li class="leftsidebar-item">
-                                    <a class="leftsidebar-item-link" href="#">Item2</a>
-                                </li>
-                                <li class="leftsidebar-item">
-                                    <a class="leftsidebar-item-link" href="#">Item3</a>
-                                </li>
-                                <li class="leftsidebar-item">
-                                    <a class="leftsidebar-item-link" href="#">Item4</a>
-                                </li>
-                            </ul> -->
+                            <label for='open-left' class="nav-link-toggle-sidebar nav-link ">Left Sidebar</label>
+                            <input type="checkbox" id="open-left" />
+                            <div class="left-side-bar side-bar">
+                                <h1 class="side-bar-title">Right Sidebar</h1>
+                                <a href="" class="side-bar-link">Item1</a>
+                                <a href="" class="side-bar-link">Item2</a>
+                                <a href="" class="side-bar-link">Item3</a>
+                            </div>
                         </li>
                         <li class="nav-items">
-                            <a class="nav-link" href="#">Right Sidebar</a>
+                            <label class="nav-link-toggle-sidebar nav-link" for='open-right'>Right Sidebar</label>
+                            <input type="checkbox" id="open-right" />
+                            <div class="right-side-bar side-bar">
+                                <h1 class="side-bar-title">Right Sidebar</h1>
+                                <a href="" class="side-bar-link">Item1</a>
+                                <a href="" class="side-bar-link">Item2</a>
+                                <a href="" class="side-bar-link">Item3</a>
+                            </div>
                         </li>
                         <li class="nav-items">
                             <a class="nav-link" href="#">No Sidebar</a>
@@ -154,20 +154,18 @@
                 </div>
                 <div class="footer-information-links">
                     <div class="footer-information-links-div">
-                        <a href="" class="footer-information-link">Pellentesque elit non gravida blandit</a>
-                        <a href="" class="footer-information-link">Pellentesque elit non gravida blandit</a>
-                        <a href="" class="footer-information-link">Pellentesque elit non gravida blandit</a>
-                        <a href="" class="footer-information-link footer-information-noborderbottom ">Pellentesque elit
-                            non
-                            gravida blandit</a>
+                        <a href="" class="footer-information-link">Pellentesque elit non gravida blandit.</a>
+                        <a href="" class="footer-information-link">Loren ipsum dolor constectetuer elit.</a>
+                        <a href="" class="footer-information-link">Phasellus nibh pellentesque congue.</a>
+                        <a href="" class="footer-information-link footer-information-noborderbottom ">Cras vitae metus
+                            aliquam pharetra.</a>
                     </div>
                     <div class="footer-information-links-div">
-                        <a href="" class="footer-information-link">Pellentesque elit non gravida blandit</a>
-                        <a href="" class="footer-information-link">Pellentesque elit non gravida blandit</a>
-                        <a href="" class="footer-information-link">Pellentesque elit non gravida blandit</a>
-                        <a href="" class="footer-information-link footer-information-noborderbottom">Pellentesque elit
-                            non
-                            gravida blandit</a>
+                        <a href="" class="footer-information-link">Pellentesque elit non gravida blandit.</a>
+                        <a href="" class="footer-information-link">Loren ipsum dolor constectetuer elit.</a>
+                        <a href="" class="footer-information-link">Phasellus nibh pellentesque congue.</a>
+                        <a href="" class="footer-information-link footer-information-noborderbottom">Cras vitae metus
+                            aliquam pharetra.</a>
                     </div>
                 </div>
             </div>

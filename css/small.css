@@ -5,8 +5,7 @@
    background: rgba(253, 247, 247,0.7);
    position: absolute;
    box-shadow: 0 0 25px rgb(182, 180, 180);
-   transition: height 1s ease-out;
-   width:110px;  
+   transition: height 0.5s ease-out;
 }
 .nav-items:visited
 {
@@ -26,13 +25,12 @@ color: rgb(76, 88, 95);
 {
    position: relative;
 }
-label{
-    display: initial;
-    
-   
+.nav-check
+{
+    display: initial;  
 }
 #check:checked ~ .nav-menu {
- height: 180px;
+ height: 200px;
 }
 .header-brand
 {

@@ -75,7 +75,6 @@ label{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
     z-index: 1; 
     padding:10px 10px 10px 10px;  
-    
 }
 
 .nav-items:hover>.dropdown-items,.dropdown-items:hover
@@ -98,44 +97,66 @@ label{
     color: rgb(76, 88, 95);
     font-weight: bold; 
 }
-/*leftsidebar*/
-/* .leftsidebar-items
+.nav-link-toggle-sidebar
 {
-    position: absolute;
-    display: none;
-    margin-top: 0px;
-    width: 150px;
-    height: auto;
-    margin-left:-620px;
-    background-color: #ececec;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
-    z-index: 1; 
-    padding:10px 10px 10px 10px;  
-    
-    
-}
-
-.nav-items:hover>.leftsidebar-items,.leftsidebar-items:hover
-{
-    display: flex;
-    flex-direction: column;
-    
-}
-.leftsidebar-item
-{
-
-    padding:10px 0px 10px 0px;    
-    list-style-type:none;
-    text-align: center;
-
-
-}
-.leftsidebar-item-link
-{   
+    display: initial;
     text-decoration-line: none;
-    color: #333333;
-    font-weight: bold; 
-} */
+    color: white;
+    font-family: 'FontAwesome';
+    font-size: 130%;
+    font-weight: normal;
+}
+.left-side-bar{
+    position:absolute;
+    height:88vh;
+    background:rgba(245, 245, 245,0.7);
+    top:0px;
+   left:0;
+    width:0;
+    overflow:hidden;
+    transition:all .5s  ease;
+  }
+#open-left{
+  display:none
+}
+#open-left:checked ~ .left-side-bar
+{
+width:200px;
+  }
+.right-side-bar{
+    position:absolute;
+    height:88vh;
+    background:rgba(245, 245, 245,0.7);
+    top:0px;
+    right:0;
+    width:0;
+    overflow:hidden;
+    transition:all .5s  ease;
+  }
+  #open-right{
+    display:none
+  }
+#open-right:checked ~ .right-side-bar
+{
+    width:200px;
+}
+.side-bar
+  {
+    text-align: center;
+    color: rgb(76, 88, 95); 
+  }
+.side-bar
+  {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+  }
+.side-bar-link
+  {
+    text-decoration-line: none;
+    color: #5b5b5b;
+    font-size: 180%;
+  }
 .header-description
 {
     display: flex;
