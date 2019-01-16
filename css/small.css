@@ -38,3 +38,19 @@
 {
     height: auto;
 }
+.footer-informations
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-information
+{
+    width: 80%;
+    
+}
+.footer-information-links
+{
+    display: flex;
+    justify-content: center;
+}

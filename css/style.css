@@ -1,10 +1,10 @@
-@import url(//fonts.googleapis.com/css?family=Open+Sans);
+
 @font-face {
     font-family: 'FontAwesome';
-    src: url('fonts/fontawesome-webfont.woff') format('woff'),
-         url('fonts/fontawesome-webfont.eot') format('eot'),
-         url('fonts/fontawesome-webfont.ttf') format('ttf'),
-         url('fonts/fontawesome-webfont.svg') format('svg');
+    src: url('../fonts/fontawesome-webfont.svg') format('woff'),
+         url('../fonts/fontawesome-webfont.eot') format('eot'),
+         url('../fonts/fontawesome-webfont.ttf') format('ttf'),
+         url('../fonts/fontawesome-webfont.svg') format('svg');
   }
 body
 {
@@ -278,41 +278,53 @@ main
     margin-top: 0px;
     padding: 30px 70px 50px 50px;
 }
-.footer-descriptions
+.footer-informations
 {
     display: flex;
-    color: white;
+    flex-direction: row;
     justify-content: space-between;
 }
 .footer-information
 {
     display: flex;
-    margin-top:30px;
-    padding-bottom: 50px;
-    border-bottom: 0.1px solid gray;
-
+    flex-direction: column;
+}
+ .footer-information-description
+{
+    display: flex;
+    flex-direction: column;
+    color: white;
 }
 .footer-information-links
 {
-    width: 30vw;
-    margin-right: 90px;
+    display: flex;
+    flex-direction: row;
+    width: 60vw; 
+    margin-top: 40px;
+
+}
+.footer-information-links-div
+{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: white;
-
+    margin-right: 40px;
+    width: 100%;
 }
 .footer-information-link
 {
     color: white;
     padding-bottom: 15px;
+    width: 100%;
     border-bottom:  0.1px solid gray; 
     font-family: 'FontAwesome';
+    margin-top: 10px;
 }
-.footer-information-contact
+.footer-information-contact-descriptions
 {
     display: flex;
     flex-direction: column;
+    margin-top: 40px;
 }
 .footer-information-contact-description
 {
@@ -333,14 +345,17 @@ main
 width: 70%;
 font-family: 'FontAwesome';
 }
-.footer-information-noborderbottom
-{
-    border-bottom: none;
-}
 .footer-copyright-text
 {
     color: white;
     text-align: center;
     margin-top: 40px;
     font-family: 'FontAwesome';
+    border-top: 0.1px solid gray; 
+    padding-top: 30px;
+
+}
+.footer-information-noborderbottom
+{
+    border-bottom: none;
 }
