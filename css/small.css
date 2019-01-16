@@ -1,0 +1,40 @@
+.section-cards-divs
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-cards-div
+{
+    width: 50%;
+}
+.setting-section
+{
+    height: auto;
+}
+.setting-section-cards
+{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.setting-section-card
+{
+    width:80%;
+    height: auto;
+}
+.setting-section-card-img
+{
+    width: auto;
+    height: 100%;
+}
+.setting-section-card-text
+{
+  font-size: 90%;
+}
+.footer
+{
+    height: auto;
+}

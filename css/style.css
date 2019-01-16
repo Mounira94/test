@@ -1,0 +1,346 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('fonts/fontawesome-webfont.woff') format('woff'),
+         url('fonts/fontawesome-webfont.eot') format('eot'),
+         url('fonts/fontawesome-webfont.ttf') format('ttf'),
+         url('fonts/fontawesome-webfont.svg') format('svg');
+  }
+body
+{
+    margin: 0px;
+    width: 100%; 
+}
+.header
+{
+    width: 100%;
+    background-image: url('https://i.imgur.com/l0MuZsO.jpg');
+    height: 620px;
+    background-repeat: no-repeat;
+    background-size: 100% 580px;
+}
+.header-brand
+{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    width: 100%; 
+    padding-top: 50px;
+}
+.logo
+{
+    color: white;
+    font-size: 300%;
+    font-family: 'FontAwesome';
+}
+.nav-menu
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin-left:-100px;   
+}
+.nav-items
+{
+    margin-left: 100px;
+    list-style-type:none;
+}
+.nav-link
+{
+    text-decoration-line: none;
+    color: white;
+    font-family: 'FontAwesome';
+    font-size: 130%;
+}
+#check{
+    visibility: hidden;
+    position: absolute
+}
+
+label{
+    padding:10px;
+    font-size:30px;
+    color: rgb(76, 88, 95);
+    font-weight: bold;
+    display: none;
+}
+.dropdown-items
+{
+    position: absolute;
+    display: none;
+    margin-top: 0px;
+    width: 100px;
+    height: auto;
+    background-color: #ececec;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+    z-index: 1; 
+    padding:10px 10px 10px 10px;  
+    
+}
+
+.nav-items:hover>.dropdown-items,.dropdown-items:hover
+{
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-item
+{
+
+    padding:10px 0px 10px 0px;    
+    list-style-type:none;
+    text-align: center;
+
+
+}
+.dropdown-item-link
+{   
+    text-decoration-line: none;
+    color: rgb(76, 88, 95);
+    font-weight: bold; 
+}
+/*leftsidebar*/
+/* .leftsidebar-items
+{
+    position: absolute;
+    display: none;
+    margin-top: 0px;
+    width: 150px;
+    height: auto;
+    margin-left:-620px;
+    background-color: #ececec;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+    z-index: 1; 
+    padding:10px 10px 10px 10px;  
+    
+    
+}
+
+.nav-items:hover>.leftsidebar-items,.leftsidebar-items:hover
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+.leftsidebar-item
+{
+
+    padding:10px 0px 10px 0px;    
+    list-style-type:none;
+    text-align: center;
+
+
+}
+.leftsidebar-item-link
+{   
+    text-decoration-line: none;
+    color: #333333;
+    font-weight: bold; 
+} */
+.header-description
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.header-description-title
+{
+    font-size: 300%;
+    margin: 70px 0px -10px 0px;
+    font-family: 'FontAwesome';
+} 
+
+.header-description-text
+{
+    font-size: 130%;
+    font-family: 'FontAwesome';
+}
+.header-description-signup
+{
+    background-color: #3aca85;
+    color: white;
+    width: 200px;
+    height: 35px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration-line: none;
+    font-size: 120%;
+    font-weight: bold;
+    padding-top: 12px;
+    margin-top: 50px;
+    font-family: 'FontAwesome';
+
+}
+main
+{
+    margin-top: -70px;
+}
+.section-cards
+{
+    width: 100%;
+    height: 600px;
+    background-color:#ececec;
+    display: flex;
+    flex-direction: column;
+}
+.section-cards-descriptions
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+.section-descriptions-title
+{
+    font-size: 300%;
+    color: rgb(76, 88, 95);
+    font-family: 'FontAwesome';
+}
+.section-descriptions-text
+{
+    font-size: 130%;
+    color: rgb(76, 88, 95);
+    margin-top: -20px;
+    font-family: 'FontAwesome';
+}
+.section-cards-divs
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+
+}
+.section-cards-div
+{
+    display: flex;
+    flex-direction: column;
+    width: 29vw;
+    text-align: center;
+    
+}
+.section-cards-div-text
+{
+    padding-left: 5px;
+    color: #5b5b5b;
+    font-family: 'FontAwesome';
+}
+.setting-section
+{
+    margin-top: 50px;
+}
+.setting-section-desriptions
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.setting-section-cards
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    height: 300px;
+
+}
+.setting-section-card
+{
+    width: 43%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+
+}
+.setting-section-card-img
+{
+    width: 22%;
+    height: 80px;;
+}
+.setting-section-card-description
+{
+    margin: -20px 0px 0px 20px;
+
+}
+.setting-section-card-text
+{
+    color: rgb(76, 88, 95);
+    font-family: 'FontAwesome';
+}
+.footer
+{
+    background-color: #222933;
+    width: calc(100%-100px);
+    height: 400px;
+    margin-top: 0px;
+    padding: 30px 70px 50px 50px;
+}
+.footer-descriptions
+{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.footer-information
+{
+    display: flex;
+    margin-top:30px;
+    padding-bottom: 50px;
+    border-bottom: 0.1px solid gray;
+
+}
+.footer-information-links
+{
+    width: 30vw;
+    margin-right: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+
+}
+.footer-information-link
+{
+    color: white;
+    padding-bottom: 15px;
+    border-bottom:  0.1px solid gray; 
+    font-family: 'FontAwesome';
+}
+.footer-information-contact
+{
+    display: flex;
+    flex-direction: column;
+}
+.footer-information-contact-description
+{
+    display: flex;
+    flex-direction: row;
+    color: white; 
+    border-bottom: 0.1px solid gray; 
+}
+.footer-information-contact-description-title
+{
+   width: 20%;
+   float: left;
+   font-weight: bold;
+   font-family: 'FontAwesome';
+}
+.footer-information-contact-description-text
+{
+width: 70%;
+font-family: 'FontAwesome';
+}
+.footer-information-noborderbottom
+{
+    border-bottom: none;
+}
+.footer-copyright-text
+{
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'FontAwesome';
+}

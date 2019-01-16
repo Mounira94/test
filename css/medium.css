@@ -1,0 +1,99 @@
+.nav-menu{
+    height:0;
+    overflow: hidden;
+   flex-direction: column;
+   background: white;
+   position: absolute;
+   right:0px;
+   top:20px;
+   box-shadow: 0 0 25px rgb(182, 180, 180);
+   transition: height 1s ease-out;
+   width: 300px;
+   margin-top: 30px;
+
+    
+}
+.nav-items:visited
+{
+text-decoration-line: none;
+color: rgb(76, 88, 95);
+}
+.nav-link
+{
+    color:rgb(76, 88, 95);
+}
+.nav-bar
+{
+   position: relative;
+}
+label{
+    display: initial;
+    
+   
+}
+#check:checked ~ .nav-menu {
+ height: 180px;
+}
+.header-brand
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.header-description-text
+{
+    width: 80%;
+    text-align: center;
+}
+.section-cards
+{
+    height: auto;
+}
+.section-cards-descriptions
+{
+    height: auto;
+text-align: center;
+}
+.section-cards-div
+{
+    width: 30vw;
+}
+.section-cards-div-img
+{
+    height: 20vh;;
+}
+.setting-section
+{
+    height: auto;
+}
+.setting-section-desriptions
+{
+    height: auto;
+    text-align: center;
+}
+.setting-section-cards
+{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.setting-section-card
+{
+    width:80%;
+    height: auto;
+}
+.setting-section-card-img
+{
+    width: auto;
+    height: 100%;
+}
+.setting-section-card-text
+{
+  font-size: 90%;
+}
+.footer
+{
+    height: auto;
+}
