@@ -1,3 +1,59 @@
+.nav-menu{
+    height:0;
+    overflow: hidden;
+   flex-direction: column;  
+   background: rgba(253, 247, 247,0.7);
+   position: absolute;
+   box-shadow: 0 0 25px rgb(182, 180, 180);
+   transition: height 1s ease-out;
+   width:110px;  
+}
+.nav-items:visited
+{
+text-decoration-line: none;
+color: rgb(76, 88, 95);
+}
+.nav-items
+{
+    padding-top: 10px;
+}
+.nav-link
+{
+    color:rgb(76, 88, 95);
+    margin-left: -120px;
+}
+.nav-bar
+{
+   position: relative;
+}
+label{
+    display: initial;
+    
+   
+}
+#check:checked ~ .nav-menu {
+ height: 180px;
+}
+.header-brand
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.header-description-text
+{
+    width: 80%;
+    text-align: center;
+}
+.section-cards
+{
+    height: auto;
+}
+.section-cards-descriptions
+{
+    height: auto;
+text-align: center;
+}
 .section-cards-divs
 {
     display: flex;
@@ -42,15 +98,21 @@
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 .footer-information
 {
-    width: 80%;
+    width: 90%;
     
 }
 .footer-information-links
 {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85vw;;
+
+}
+.footer-information-links-div
+{
+    width: 50%;
 }

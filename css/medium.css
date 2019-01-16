@@ -1,26 +1,26 @@
 .nav-menu{
     height:0;
     overflow: hidden;
-   flex-direction: column;
-   background: white;
+   flex-direction: column;  
+   background: rgba(253, 247, 247,0.7);
    position: absolute;
-   right:0px;
-   top:20px;
    box-shadow: 0 0 25px rgb(182, 180, 180);
    transition: height 1s ease-out;
-   width: 300px;
-   margin-top: 30px;
-
-    
+   width:110px;  
 }
 .nav-items:visited
 {
 text-decoration-line: none;
 color: rgb(76, 88, 95);
 }
+.nav-items
+{
+    padding-top: 10px;
+}
 .nav-link
 {
     color:rgb(76, 88, 95);
+    margin-left: -120px;
 }
 .nav-bar
 {
