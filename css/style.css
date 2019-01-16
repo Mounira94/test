@@ -1,10 +1,11 @@
 
 @font-face {
-    font-family: 'FontAwesome';
-    src: url('../fonts/fontawesome-webfont.svg') format('woff'),
-         url('../fonts/fontawesome-webfont.eot') format('eot'),
-         url('../fonts/fontawesome-webfont.ttf') format('ttf'),
-         url('../fonts/fontawesome-webfont.svg') format('svg');
+    font-family: FontAwesome;
+    src:local("FontAwesome"),
+         url(../fonts/fontawesome-webfont.woff) format('woff'),
+         url(../fonts/fontawesome-webfont.eot) format('eot'),
+         url(../fonts/fontawesome-webfont.ttf) format('ttf'),
+         url(../fonts/fontawesome-webfont.svg) format('svg'),
   }
 body
 {
@@ -31,7 +32,7 @@ body
 {
     color: white;
     font-size: 300%;
-    font-family: 'FontAwesome';
+    font-family: FontAwesome, sans-serif;
 }
 .nav-menu
 {
@@ -49,15 +50,18 @@ body
 {
     text-decoration-line: none;
     color: white;
-    font-family: 'FontAwesome';
+    font-family: FontAwesome, sans-serif;
     font-size: 130%;
+}
+.nav-link:visited
+{
+    text-decoration-line: none;
 }
 #check{
     visibility: hidden;
     position: absolute
 }
-
-label{
+.nav-check{
     padding:10px;
     font-size:30px;
     color: rgb(76, 88, 95);
@@ -76,7 +80,7 @@ label{
     z-index: 1; 
     padding:10px 10px 10px 10px;  
 }
-
+/* Display dropdown list */
 .nav-items:hover>.dropdown-items,.dropdown-items:hover
 {
     display: flex;
@@ -84,25 +88,23 @@ label{
 }
 .dropdown-item
 {
-
     padding:10px 0px 10px 0px;    
     list-style-type:none;
     text-align: center;
-
-
 }
 .dropdown-item-link
 {   
     text-decoration-line: none;
     color: rgb(76, 88, 95);
     font-weight: bold; 
+    font-size: 180%;
 }
 .nav-link-toggle-sidebar
 {
     display: initial;
     text-decoration-line: none;
     color: white;
-    font-family: 'FontAwesome';
+    font-family: FontAwesome, sans-serif;
     font-size: 130%;
     font-weight: normal;
 }
@@ -111,19 +113,22 @@ label{
     height:88vh;
     background:rgba(245, 245, 245,0.7);
     top:0px;
-   left:0;
+    left:0;
     width:0;
     overflow:hidden;
     transition:all .5s  ease;
   }
-#open-left{
-  display:none
+#open-left
+{
+    display:none
 }
+/* Display left sidebar */
 #open-left:checked ~ .left-side-bar
 {
-width:200px;
-  }
-.right-side-bar{
+    width:200px;
+}
+.right-side-bar
+{
     position:absolute;
     height:88vh;
     background:rgba(245, 245, 245,0.7);
@@ -132,31 +137,30 @@ width:200px;
     width:0;
     overflow:hidden;
     transition:all .5s  ease;
-  }
-  #open-right{
+}
+#open-right
+{
     display:none
-  }
+}
+/* Display right sidebar */
 #open-right:checked ~ .right-side-bar
 {
     width:200px;
 }
 .side-bar
-  {
+{
     text-align: center;
     color: rgb(76, 88, 95); 
-  }
-.side-bar
-  {
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .side-bar-link
-  {
+{
     text-decoration-line: none;
     color: #5b5b5b;
     font-size: 180%;
-  }
+}
 .header-description
 {
     display: flex;
@@ -168,13 +172,13 @@ justify-content: space-around;
 {
     font-size: 300%;
     margin: 70px 0px -10px 0px;
-    font-family: 'FontAwesome';
+    font-family: FontAwesome, sans-serif;
 } 
 
 .header-description-text
 {
     font-size: 130%;
-    font-family: 'FontAwesome';
+    font-family: FontAwesome, sans-serif;
 }
 .header-description-signup
 {
@@ -189,7 +193,7 @@ justify-content: space-around;
     font-weight: bold;
     padding-top: 12px;
     margin-top: 50px;
-    font-family: 'FontAwesome';
+    font-family: FontAwesome, sans-serif;
 
 }
 main
@@ -215,14 +219,14 @@ main
 {
     font-size: 300%;
     color: rgb(76, 88, 95);
-    font-family: 'FontAwesome';
+    font-family: FontAwesome, sans-serif;
 }
 .section-descriptions-text
 {
     font-size: 130%;
     color: rgb(76, 88, 95);
     margin-top: -20px;
-    font-family: 'FontAwesome';
+    font-family: FontAwesome, sans-serif;
 }
 .section-cards-divs
 {
@@ -245,7 +249,7 @@ main
 {
     padding-left: 5px;
     color: #5b5b5b;
-    font-family: 'FontAwesome';
+    font-family: FontAwesome, sans-serif;
 }
 .setting-section
 {
@@ -265,7 +269,6 @@ main
     flex-wrap: wrap;
     margin-top: 50px;
     height: 300px;
-
 }
 .setting-section-card
 {
@@ -274,7 +277,6 @@ main
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
-
 }
 .setting-section-card-img
 {
@@ -289,7 +291,7 @@ main
 .setting-section-card-text
 {
     color: rgb(76, 88, 95);
-    font-family: 'FontAwesome';
+    font-family: FontAwesome, sans-serif;
 }
 .footer
 {
@@ -322,7 +324,6 @@ main
     flex-direction: row;
     width: 60vw; 
     margin-top: 40px;
-
 }
 .footer-information-links-div
 {
@@ -338,7 +339,7 @@ main
     padding-bottom: 15px;
     width: 100%;
     border-bottom:  0.1px solid gray; 
-    font-family: 'FontAwesome';
+    font-family: FontAwesome, sans-serif;
     margin-top: 10px;
 }
 .footer-information-contact-descriptions
@@ -359,19 +360,19 @@ main
    width: 20%;
    float: left;
    font-weight: bold;
-   font-family: 'FontAwesome';
+   font-family: FontAwesome, sans-serif;
 }
 .footer-information-contact-description-text
 {
 width: 70%;
-font-family: 'FontAwesome';
+font-family: FontAwesome, sans-serif;
 }
 .footer-copyright-text
 {
     color: white;
     text-align: center;
     margin-top: 40px;
-    font-family: 'FontAwesome';
+    font-family: FontAwesome, sans-serif;
     border-top: 0.1px solid gray; 
     padding-top: 30px;
 

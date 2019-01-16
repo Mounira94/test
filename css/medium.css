@@ -1,6 +1,8 @@
-.nav-menu{
-    height:0;
-    overflow: hidden;
+/* Meduim device style */
+.nav-menu
+{
+   height:0;
+   overflow: hidden;
    flex-direction: column;  
    background: rgba(253, 247, 247,0.7);
    position: absolute;
@@ -10,8 +12,8 @@
 }
 .nav-items:visited
 {
-text-decoration-line: none;
-color: rgb(76, 88, 95);
+   text-decoration-line: none;
+   color: rgb(76, 88, 95);
 }
 .nav-items
 {
@@ -24,13 +26,14 @@ color: rgb(76, 88, 95);
 }
 .nav-bar
 {
-   position: relative;
+    position: relative;
 }
 .nav-check{
     display: initial; 
 }
-#check:checked ~ .nav-menu {
- height: 200px;
+#check:checked ~ .nav-menu 
+{
+    height: 200px;
 }
 .header-brand
 {
@@ -58,7 +61,7 @@ text-align: center;
 }
 .section-cards-div-img
 {
-    height: 20vh;;
+    height: 20vh;
 }
 .setting-section
 {
@@ -102,8 +105,7 @@ text-align: center;
 }
 .footer-information
 {
-    width: 90%;
-    
+    width: 90%;  
 }
 .footer-information-links
 {
@@ -111,7 +113,6 @@ text-align: center;
     flex-direction: row;
     justify-content: space-between;
     width: 85vw;;
-
 }
 .footer-information-links-div
 {
